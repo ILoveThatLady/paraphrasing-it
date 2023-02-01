@@ -26,19 +26,39 @@
                 <textarea class="form-control" name="inputText" id="inputText" cols="2" rows="10" placeholder="I'm waiting for you..."></textarea>
                 <input class="btn btn-primary" type="submit" value="Submit">            
             </div>
+        
             <div class="col">
-                <div class="accordion" id="">
-                    <div class="acordion-item">
-                        <h2 class="accordion-header" id="">
-                            <button class="accordion-button" type="button" data-bs-toggle="colapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 What is this?
                             </button>
                         </h2>
+                        <div id="collapseOne" class="accordion-collapse colapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Hello, this is a small web application</strong> which allows you to paraphrase the text you enter. 
+                            </div>
+                        </div>
                     </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How it works?
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>It's very simple,</strong> write what you want and send it :D
+                            </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
     </div>
+    
+
     
 
 
